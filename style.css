@@ -638,3 +638,49 @@
              /* Hide icons on mobile */
          }
      }
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 85%;
+        max-width: 320px;
+        background-color: white;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-links {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .nav-icons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 15px;
+    }
+}
+
